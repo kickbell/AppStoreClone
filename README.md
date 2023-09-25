@@ -32,9 +32,7 @@
 - 최근검색뷰와 검색 중 같은 경우, 기본 UITableViewCell의 이미지와 크게 다르지 않기 때문에 동작에 따라서 Label의 컬러값을 바꿔주고 cell.imageView에 검색 이미지를 넣어주는 식으로 따로 셀을 생성하지 않고 사용했습니다.
 - 검색결과를 나타내는 SearchedTableViewCell 은 1개의 스택뷰에 AppIconListView와 ScreenshotsPreviewView를 vertical로 조합해서 구현되었습니다. 각 뷰들이 컴포넌트화 되어있어서 어디서든 재사용할 수 있습니다. ScreenshotsPreviewView는 스크롤되지않게 지정해서 상세화면에서도 재사용하고 있습니다.
 
-![https://velog.velcdn.com/images/dev_kickbell/post/77862374-c1e9-48f9-87a3-c73ee6dc59b7/image.PNG](https://velog.velcdn.com/images/dev_kickbell/post/77862374-c1e9-48f9-87a3-c73ee6dc59b7/image.PNG)
-
-![https://velog.velcdn.com/images/dev_kickbell/post/0a5c5ff8-870e-43cd-a67d-dd9328eb1f01/image.PNG](https://velog.velcdn.com/images/dev_kickbell/post/0a5c5ff8-870e-43cd-a67d-dd9328eb1f01/image.PNG)
+<img src="https://velog.velcdn.com/images/dev_kickbell/post/77862374-c1e9-48f9-87a3-c73ee6dc59b7/image.PNG" width="300" height="600"/><img src="https://velog.velcdn.com/images/dev_kickbell/post/0a5c5ff8-870e-43cd-a67d-dd9328eb1f01/image.PNG" width="300" height="600"/>
 
 ### 상세화면
 
@@ -42,9 +40,7 @@
 - 순서대로 AppIconDetailView, AppInfoDetailView, NewFeatureView, ShowMoreView, ScreenshotsPreviewView, ShowMoreView, SubtitleView 으로 스택뷰에 쌓여있으며 보시는 것처럼 ShowMoreView 같은 경우는 재사용이 되었고 ScreenshotsPreviewView 같은 경우도 검색화면에서 재사용되어 유용하게 동작하였습니다.
 - 별개로 중간중간 구분선인 SeparatorView와 스택뷰의 빈공간을 조절하는 SpacerView 가 재사용되어 사용되고 있습니다.
 
-![https://velog.velcdn.com/images/dev_kickbell/post/f8cff7bb-3544-42a7-a761-3e489ab20086/image.PNG](https://velog.velcdn.com/images/dev_kickbell/post/f8cff7bb-3544-42a7-a761-3e489ab20086/image.PNG)
-
-![https://velog.velcdn.com/images/dev_kickbell/post/61dceb47-bfee-449b-a956-cd5a2e118934/image.PNG](https://velog.velcdn.com/images/dev_kickbell/post/61dceb47-bfee-449b-a956-cd5a2e118934/image.PNG)
+<img src="https://velog.velcdn.com/images/dev_kickbell/post/f8cff7bb-3544-42a7-a761-3e489ab20086/image.PNG" width="300" height="600"/><img src="https://velog.velcdn.com/images/dev_kickbell/post/61dceb47-bfee-449b-a956-cd5a2e118934/image.PNG" width="300" height="600"/>
 
 ## 5. UI 재사용성, 컴포넌트화, 더보기
 
@@ -182,9 +178,7 @@ extension UIFont {
 
 폰트가 너무 커지는 경우 UILabel의 `intrinsicContentSize` 속성을 기준으로 `UIStackView의 axis`를 활용해서 horizontal 로 되어있는 UI를 vertical로 변경해서 접근성을 향상시켰습니다. 폰트 값이 바로 바뀔 수 있도록 `UIContentSizeCategory.didChangeNotification` 을 등록해서 바로 대응할 수 있도록 하였습니다. 
 
-![https://velog.velcdn.com/images/dev_kickbell/post/1a24efb5-14cd-4a34-a731-246a747f3ad2/image.PNG](https://velog.velcdn.com/images/dev_kickbell/post/1a24efb5-14cd-4a34-a731-246a747f3ad2/image.PNG)
-
-![https://velog.velcdn.com/images/dev_kickbell/post/246d9800-66be-405c-995b-5932057ce7bc/image.PNG](https://velog.velcdn.com/images/dev_kickbell/post/246d9800-66be-405c-995b-5932057ce7bc/image.PNG)
+<img src="https://velog.velcdn.com/images/dev_kickbell/post/1a24efb5-14cd-4a34-a731-246a747f3ad2/image.PNG" width="300" height="600"/><img src="https://velog.velcdn.com/images/dev_kickbell/post/246d9800-66be-405c-995b-5932057ce7bc/image.PNG" width="300" height="600"/>
 
 ```swift
 private func setupViews() {
